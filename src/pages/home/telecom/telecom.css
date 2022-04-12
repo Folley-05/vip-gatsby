@@ -1,0 +1,170 @@
+.home .home-telecom {
+    padding: 5% 0%;
+}
+
+.home .home-telecom .wrapper {
+    width: 90%;
+    margin: auto;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+}
+
+.home .home-telecom .images {
+    display: none;
+}
+
+.home .home-telecom .contain img {
+    display: block;
+    width: 60%;
+}
+
+.home .home-telecom h1 {
+    margin-bottom: 0;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.home .home-telecom h3 {
+    margin-top: 0;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.home .home-telecom .tags {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.home .home-telecom .tag {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    margin: 10px 0px;
+    padding: 3% 0%;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5.6px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .home .home-telecom .wrapper {
+        background-position: 50% 90%;
+    }
+
+    .home .home-telecom .contain h1 {
+        width: 80%;
+        margin: 0;
+        font-size: 2em;
+    }
+
+    .home .home-telecom .tag {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        width: 40%;
+        font-weight: 300;
+        text-align: left;
+        box-shadow: none;
+    }
+
+    .home .home-telecom .tag img {
+        width: 100%;
+        max-width: 60px;
+    }
+
+    .home .home-telecom .tag-text {
+        margin-left: 15px;
+    }
+
+    .home .home-telecom h2 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .home .home-telecom .wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        background-image: none;
+    }
+
+    .home .home-telecom h1:hover {
+        cursor: pointer;
+    }
+    .home .home-telecom .images {
+        flex: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    .home .home-telecom .images img {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .home .home-telecom .images img:nth-child(2) {
+        min-width: 350px;
+    }
+
+    .home .home-telecom .contain {
+        flex: 3;
+    }
+
+    .home .home-telecom .contain h1 {
+        width: 100%;
+    }
+
+    .home .home-telecom .tag {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        width: 48%;
+        font-weight: 300;
+        text-align: left;
+        box-shadow: none;
+    }
+    .home .home-telecom .tag h2:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .home .home-telecom .images {
+        justify-content: flex-start;
+    }
+
+    .home .home-telecom .images img:nth-child(2) {
+        margin-top: 50px;
+        min-width: 450px;
+    }
+
+    .home .home-telecom .contain h1 {
+        width: 100%;
+        font-size: 2.5em;
+    }
+
+    .home .home-telecom h3 {
+        font-size: 1.5em;
+    }
+
+    .home .home-telecom .tag {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        width: 48%;
+        font-size: 1.5em;
+        font-weight: 300;
+        text-align: left;
+        box-shadow: none;
+    }
+}

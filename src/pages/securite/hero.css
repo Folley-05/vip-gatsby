@@ -1,0 +1,130 @@
+.security-hero {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.security-hero .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 60vh;
+    margin: auto;
+}
+
+.security-hero .contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.security-hero h1 {
+    font-size: 1.5em;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.security-hero h3 {
+    margin: 5px auto;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.security-hero .line {
+    width: 50%;
+    margin: 20px auto;
+    border-bottom: 8px solid var(--orange);
+    border-radius: 10px;
+}
+
+.security-hero .img {
+    order: -1;
+    margin-bottom: 20px;
+}
+
+
+.security-hero img {
+    display: block;
+    width: 70%;
+    margin: auto;
+    max-width: 200px;
+    animation: var(--bounce-hero);
+}
+
+@media screen and (min-width: 992px) {
+    .security-hero .wrapper {
+        padding: 2%;
+    }
+
+    .security-hero .contain {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        max-width: 1400px;
+    }
+
+    .security-hero .text {
+        display: flex;
+        align-items: center;
+        padding: 4% 1%;
+    }
+
+    .security-hero .line {
+        width: 10px;
+        height: 150px;
+        margin: 20px 20px;
+        order: -1;
+        background-color: var(--orange);
+        border: none;
+    }
+
+    .security-hero h1 {
+        margin: 5px auto;
+        font-size: 2.5em;
+        font-weight: 800;
+        text-align: left;
+    }
+
+    .security-hero h3 {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .security-hero .img {
+        width: 45%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .security-hero img {
+        display: block;
+        width: 60%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .security-hero .wrapper {
+        padding: 1% 1%;
+        min-width: none;
+    }
+
+    .security-hero .contain {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    .security-hero h1 {
+        font-size: 2.8em;
+    }
+
+    .security-hero h3 {
+        font-size: 1.3em;
+    }
+
+}

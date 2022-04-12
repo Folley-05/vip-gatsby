@@ -1,0 +1,79 @@
+.approot {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 99.8vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: var(--blue);
+    scroll-behavior: smooth;
+}
+
+.approot .main {
+    flex: 1;
+    position: relative;
+}
+
+.bt-st {
+    display: block;
+    background-color: var(--orange);
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.bt-st:hover {
+    cursor: pointer;
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+@keyframes hero-bounce {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-10px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(0px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(10px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(20px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(25px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(30px);
+    }
+}

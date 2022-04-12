@@ -1,0 +1,98 @@
+.security .section2 {
+    padding: 5% 0%;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.security .section2 .wrapper {
+    width: 90%;
+    margin: auto;
+}
+.security .section2 h1 {
+    display: inline-block;
+    padding: 0% 1%;
+    font-size: 1.8em;
+    border-bottom: 3px solid var(--white);
+}
+.security .section2 .tl2 {
+    display: none;
+}
+.security .section2 .left div {
+    width: 60%;
+    max-width: 400px;
+    margin: auto;
+    padding: 5%;
+    background-color: var(--orange);
+    border-radius: 10% 50% 10% 15%;
+    /* border: 1px solid rgb(2, 6, 253); */
+}
+.security .section2 img {
+    display: block;
+    width: 100%;
+    border-radius: 20%;
+    transform: translate(-25%, 10px);
+}
+.security .section2 p {
+    font-size: 1.1em;
+}
+.security .section2 button {
+    max-width: 200px;
+    /* margin: auto; */
+    padding: 4% 5%;
+    font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+    .security .section2 button {
+        /* margin: auto; */
+        padding: 2% 3%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .security .section2 .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .security .section2 h1 {
+        font-size: 2.5em;
+    }
+    .security .section2 .tl1 {
+        display: none;
+    }
+    .security .section2 .tl2 {
+        display: inline-block;
+    }
+    .security .section2 .left, .security .section2 .rigth {
+        width: 48%;
+    }
+    .security .section2 button {
+        padding: 4%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .security .section2 .left {
+        width: 50%;
+    }
+    .security .section2 .rigth {
+        width: 45%;
+    }
+    .security .section2 .left div {
+        max-width: 500px;
+    }
+    .security .section2 p {
+        width: 80%;
+        margin: 30px 0px;
+        font-size: 1.2em;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    .security .section2 p {
+        width: 80%;
+        margin: 40px 0px;
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,44 @@
+
+.footer .form {
+    text-align: left;
+}
+.footer label {
+    display: block;
+    margin-top: 20px;
+}
+.footer .form .ipp, .footer .form textarea {
+    width: 90%;
+    display: block;
+    height: 30px;
+    padding: 2% 3%;
+    background: var(--transparent);
+    border: var(--no-value);
+    border-bottom: 2px solid var(--white);
+    outline: 0;
+    font-size: 1.1em;
+    color: var(--white);
+}
+.footer .form textarea {
+    resize: vertical;
+}
+.footer .form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: 60px;
+    background: var(--orange);
+    border: var(--no-value);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    transition: all 2s ease-out;
+}
+.footer .form button:hover {
+    cursor: pointer;
+}
+.footer .form-group {
+    margin: 30px 0px;
+}

@@ -1,0 +1,61 @@
+.comp-balls .secs {
+    width: 80%;
+    margin: auto;
+}
+.comp-balls .sec {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.comp-balls .sec div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 15vw;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+}
+.comp-balls .sec h3 {
+    text-align: center;
+    color: var(--bg-blue) ;
+}
+.comp-balls .secs .sec-1 div {
+    background-color: #e1ece8;
+}
+.comp-balls .secs .sec-2 div {
+    background-color: #f5e1e7;
+}
+.comp-balls .secs .sec-3 div {
+    background-color: #f5eee1;
+}
+.comp-balls .secs .sec-4 div {
+    background-color: #eae6f5;
+}
+.comp-balls .secs .sec-5 div {
+    background-color: #f5e7e6;
+}
+.comp-balls .secs .sec-6 div {
+    background-color: #f4f5e1;
+}
+.comp-balls .secs .sec-7 div {
+    background-color: #e1f5f5;
+}
+.comp-balls .secs .sec-8 div {
+    background-color: #e6f5e7;
+}
+.comp-balls .secs .sec-9 div {
+    background-color: #f5e6e6;
+}
+.comp-balls img {
+    display: block;
+    width: 50%;
+}
+.comp-balls .balls p {
+    margin: 10px auto;
+    font-size: 1.3em;
+    text-align: center;
+}

@@ -1,0 +1,126 @@
+.footer {
+    padding: 1% 3%;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.2em;
+}
+.footer .wrapper {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid #fff; */
+}
+.footer img {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.footer .im2, .footer .leads {
+    display: none;
+}
+.footer .wrapper>div {
+    margin: 30px auto;
+}
+.footer .perso, .footer .contact {
+    margin: 20px auto;
+}
+.footer h3 {
+    margin: 5px auto;
+} 
+.footer span {
+    display: block;
+    color: #aaa;
+    /* border: 1px solid blue; */
+}
+.footer .foot {
+    border-top: 1px solid var(--white);
+}
+.footer .foot h4 {
+    margin: 0;
+    margin-top: 10px;
+}
+.footer .newlatter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #FFF; */
+}
+.footer .newlatter input {
+    display: block;
+    width: 70%;
+    height: 41px;
+    padding-right: 18px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 200;
+    color: var(--blue);
+    outline: 0;
+}
+.footer .newlatter button {
+    width: 30%;
+    height: 43px;
+    transform:  translate(-15px, 0px);
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer .first, .footer .second {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+        /* border: 1px solid #000; */
+    }
+    .footer .im1 {
+        display: none;
+    }
+    .footer .im2, .footer .leads {
+        display: block;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .footer .third {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .footer h1 {
+        margin: 40px auto;
+        font-size: 2.8em;
+    }
+    .footer .contain {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        text-align: justify;
+    }
+    .footer img {
+        margin: auto 0px;
+    }
+    .footer .first, .footer .second {
+        flex: 1;
+    }
+    .footer .third {
+        flex: 1;
+    }
+    .footer .newlatter input {
+        height: 50px;
+    }
+    .footer .newlatter button {
+        height: 53px;
+        transform:  translate(-15px, 0px);
+    }
+    .footer .foot {
+        /* margin: 0px !important; */
+    }
+}
