@@ -12,7 +12,8 @@ import women from './assets/women.png'
 import vip from '../../../assets/vip.png'
 import secu from '../../../assets/secu.png'
 
-function Hero() {
+function Hero({data}) {
+    console.log("the root data ", data)
     return (
         <div className='hero'>
             <div className="bgi">
@@ -32,7 +33,7 @@ function Hero() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <Slide1 />
+                    <Slide1 data={data} />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Slide2 />
@@ -40,15 +41,12 @@ function Hero() {
                 <SwiperSlide>
                     <Slide3 />
                 </SwiperSlide>
-                {/* <SwiperSlide>
-                    <Slide1 />
-                </SwiperSlide> */}
             </Swiper>
         </div>
     )
 }
 
-const Slide1 = () => {
+const Slide1 = ({data}) => {
 
     return (
 
@@ -59,7 +57,7 @@ const Slide1 = () => {
                         Lorem ipsum dolor laborum!
                     </h2>
                     <h1 data-aos="fade-right" >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit et ipsa unde quasi iure.
+                        {data.frontmatter.titre}
                     </h1>
                     <p data-aos="fade-right" data-aos-delay="500" >
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptas consequatur architecto asperiores deserunt ea eum distinctio officiis in atque.
