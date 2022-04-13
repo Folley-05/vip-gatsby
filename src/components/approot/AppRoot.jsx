@@ -17,6 +17,7 @@ function AppRoot({ children }) {
     }, [])
     return (
         <div className='approot' id="approot">
+            <title>Vip-Securgence</title>
             <Header />
             <div className="main">
                 {children}
