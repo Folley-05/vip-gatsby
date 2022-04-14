@@ -6,8 +6,6 @@ import './header2.css'
 import enseigne from './enseigne.png'
 
 
-
-
 function Header({location}) {
     // let history=useHistory()
     let history = {}
