@@ -32,6 +32,7 @@ module.exports = {
 			option: {
 				extensions: ['.mdx', '.md']
 			}
-		}
+		},
+		'gatsby-plugin-netlify-cms'
 	],
 }
