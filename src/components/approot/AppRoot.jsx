@@ -8,7 +8,7 @@ import Header from '../header/Header';
 import Footer from '../footer/Footer';
 import Actions from '../actions/Actions';
 
-function AppRoot({ children }) {
+function AppRoot({ children, location }) {
     React.useEffect(() => {
         AOS.init({
             scrollContainer: "#approot",
@@ -18,7 +18,7 @@ function AppRoot({ children }) {
     return (
         <div className='approot' id="approot">
             <title>Vip-Securgence</title>
-            <Header />
+            <Header location={location} />
             <div className="main">
                 {children}
                 <Actions />

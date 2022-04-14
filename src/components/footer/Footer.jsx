@@ -6,7 +6,6 @@ import secu2 from './secu.svg'
 
 function Footer() {
     React.useEffect(()=>{
-        console.log("window ", window)
     }, [])
     return (
         <div className='footer'>
@@ -68,9 +67,7 @@ function Footer() {
                         </div> */}
                     </div>
                 </div>
-                <div className="foot" 
-                    onClick={()=>window.scrollTo(0, 0)}
-                >
+                <div className="foot"  >
                     <h4>© VIP TÉLÉCOM & SÉCURGENCE </h4>
                 </div>
             </div>

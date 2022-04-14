@@ -5,11 +5,10 @@ import './header.css'
 import './header2.css'
 import enseigne from './enseigne.png'
 
-const isBrowser = () => typeof window !== "undefined"
 
-const company = isBrowser() ? document.location.pathname === '/compagnie' : false
 
-function Header() {
+
+function Header({location}) {
     // let history=useHistory()
     let history = {}
     useEffect(() => {
@@ -33,8 +32,9 @@ function Header() {
         console.log("toogle menu ", document.getElementById('wrapper'))
         document.getElementById('wrapper').classList.toggle('open')
     }
-    const setClass = (url) => url === document.location.pathname ? "li-page" : ""
-
+    const company = location.pathname === '/compagnie'
+    const setClass = (url) => url === location.pathname ? "li-page" : ""
+    console.log(location)
     return (
         <div className={company ? 'header-company' : 'header'} id='header'>
             <div className="wrapper" id='wrapper'>
