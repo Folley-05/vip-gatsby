@@ -5,7 +5,9 @@ import './header.css'
 import './header2.css'
 import enseigne from './enseigne.png'
 
-const company = document.location.pathname === '/compagnie'
+const isBrowser = () => typeof window !== "undefined"
+
+const company = isBrowser() ? document.location.pathname === '/compagnie' : false
 
 function Header() {
     // let history=useHistory()
