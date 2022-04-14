@@ -1,5 +1,4 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 
 import './home.css'
 import Hero from './hero/Hero'
@@ -13,12 +12,10 @@ import Telecom from './telecom/Telecom'
 // import Map from './map/Map'
 
 function Home() {
-    const {allMdx}=useStaticQuery(query)
-    // console.log("the data ", allMdx.nodes)
     return (
         <div className='home'>
-            <Hero data={allMdx.nodes[0]} />
-            <About data={allMdx.nodes[1]}  />
+            <Hero />
+            <About />
             <Security />
             <Telecom />
             {/* <Radio />
@@ -29,21 +26,6 @@ function Home() {
         </div>
     )
 }
-
-const query = graphql`
-{
-    allMdx(filter: {frontmatter: {page: {eq: "home"}}}) {
-      nodes {
-        slug
-        frontmatter {
-          page
-          titre
-        }
-        body
-      }
-    }
-  }
-`
 
 export default Home
 

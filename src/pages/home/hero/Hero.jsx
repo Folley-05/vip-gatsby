@@ -1,6 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { EffectCube, Pagination, Autoplay } from "swiper"
+import { useStaticQuery, graphql } from 'gatsby'
 
 // Import Swiper styles
 import "swiper/css"
@@ -12,8 +13,9 @@ import women from './assets/women.png'
 import vip from '../../../assets/vip.png'
 import secu from '../../../assets/secu.png'
 
-function Hero({data}) {
-    console.log("the root data ", data)
+function Hero() {
+    const { mdx } = useStaticQuery(query)
+    // console.log("the root data ", mdx)
     return (
         <div className='hero'>
             <div className="bgi">
@@ -23,7 +25,7 @@ function Hero({data}) {
                 effect={"cube"}
                 grabCursor={true}
                 loop={true}
-                autoplay={{delay: 8000}}
+                autoplay={{ delay: 8000 }}
                 loopedSlides={3}
                 pagination={true}
                 cubeEffect={{
@@ -33,7 +35,7 @@ function Hero({data}) {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <Slide1 data={data} />
+                    <Slide1 data={mdx} />
                 </SwiperSlide>
                 <SwiperSlide>
                     <Slide2 />
@@ -46,7 +48,7 @@ function Hero({data}) {
     )
 }
 
-const Slide1 = ({data}) => {
+const Slide1 = ({ data }) => {
 
     return (
 
@@ -54,7 +56,7 @@ const Slide1 = ({data}) => {
             <div className="presentation">
                 <div className="text">
                     <h2 className='text-orange' data-aos="fade-right" data-aos-delay="300">
-                        Lorem ipsum dolor laborum!
+                        {data.frontmatter.sous_titre}
                     </h2>
                     <h1 data-aos="fade-right" >
                         {data.frontmatter.titre}
@@ -63,7 +65,7 @@ const Slide1 = ({data}) => {
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptas consequatur architecto asperiores deserunt ea eum distinctio officiis in atque.
                     </p>
                     <button className="bt-st" data-aos="fade-right" data-aos-delay="1000" >
-                        Get a quote
+                        {data.frontmatter.button}
                     </button>
                 </div>
             </div>
@@ -109,5 +111,21 @@ const Slide3 = () => {
         </div>
     )
 }
+
+const query = graphql`
+  {
+    mdx(frontmatter: {page: {eq: "home"}}, slug: {eq: "hero"}) {
+      id
+      slug
+      frontmatter {
+        page
+        titre
+        sous_titre
+        button
+      }
+      body
+    }
+  }
+`
 
 export default Hero

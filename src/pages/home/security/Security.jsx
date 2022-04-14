@@ -1,11 +1,16 @@
 import React from 'react'
 import { BsShieldFillCheck } from 'react-icons/bs'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import './security.css'
 import secu from './secu.svg'
 import lock from './lock2.svg'
 
 function Security() {
+    const data=useStaticQuery(query)
+    const title=data.mdx.frontmatter
+    const elts=data.allMdx.nodes
+    console.log("the first query", title, elts)
     return (
         <div className="home-security">
             <div className="wrapper">
@@ -15,15 +20,17 @@ function Security() {
                 </div>
                 <div className="contain">
                     <img src={secu} alt="securgence" />
-                    <h1 className='text-orange'>Lorem ipsum dolor site amet consectetur adipisicing sequi!</h1>
-                    <h3>Vivamus ut fermentum quam, eget egestas mauris. Phasellus in tellus.</h3>
+                    <h1 className='text-orange'>{title.titre}</h1>
+                    <h3>{title.sous_titre}</h3>
                     <div className="tags">
-                        <Tag label="Contrôle d'accès" />
+                    {
+                        elts.map(({frontmatter}, i)=><Tag label={frontmatter.titre} details={frontmatter.detail} key={`secu-${i}`} />)
+                    }
+                        {/* <Tag label="Contrôle d'accès" />
                         <Tag label="Caméra de surveillance" />
                         <Tag label="Système d'alarme" />
                         <Tag label="Alarme Incendie" />
-                        <Tag label="Appel de Garde" />
-                        {/* <Tag label="" /> */}
+                        <Tag label="Appel de Garde" /> */}
                     </div>
                 </div>
             </div>
@@ -39,10 +46,35 @@ const Tag = ({ label, details }) => {
             </div>
             <div className="tag-text">
                 <h2>{ label }</h2>
-                Illum rerum hic quo Commodi nesciunt egestas mauris.
+                {details}
             </div>
         </div>
     )
 }
+
+const query = graphql`
+  {
+    allMdx(filter: {slug: {ne: "security"}, frontmatter: {page: {eq: "security"}}}) {
+      nodes {
+        frontmatter {
+          titre
+          detail
+        }
+        slug
+      }
+    }
+    mdx(frontmatter: {page: {eq: "security"}, role: {eq: "title"}}) {
+      id
+      slug
+      frontmatter {
+        page
+        titre
+        sous_titre
+        button
+        role
+      }
+    }
+  }
+`
 
 export default Security
