@@ -1,5 +1,7 @@
 backend:
-  name: test-repo
+  name: github
+  repo: Folley-05/vip-gatsby
+  branch: master
 
 media_folder: static/assets
 public_folder: /assets
@@ -7,10 +9,9 @@ public_folder: /assets
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: content
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
@@ -19,7 +20,11 @@ collections:
     folder: content/home
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
+      # - { name: path, label: Path }
+      # - { name: date, label: Date, widget: datetime }
+      - { name: titre-section, label: titre-section }
+      - { name: titre, label: titre }
+      - { name: vip-text, label: vip-text }
+      - { name: secur-text, label: secur-text }
+      - { name: page, label: page }
       - { name: body, label: Body, widget: markdown }
