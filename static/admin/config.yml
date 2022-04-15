@@ -7,14 +7,6 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: content
-    create: true
-    fields:
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
   - name: Pages
     label: Pages
     folder: content/home
