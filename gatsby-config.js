@@ -10,28 +10,28 @@ module.exports = {
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'home',
-				path: `${__dirname}/content/home`
+				path: `${__dirname}/content/accueil`
 			}
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'security',
-				path: `${__dirname}/content/security`
+				path: `${__dirname}/content/securite`
 			}
 		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'telecom',
-				path: `${__dirname}/content/tel`
+				path: `${__dirname}/content/telecommunication`
 			}
 		},
 		{
-			resolve: 'gatsby-plugin-mdx',
-			option: {
-				extensions: ['.mdx', '.md']
-			}
+			resolve: `gatsby-plugin-mdx`,
+			options: {
+				extensions: [`.mdx`, `.md`],
+			},
 		},
 		'gatsby-plugin-netlify-cms'
 	],

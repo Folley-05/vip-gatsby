@@ -14,7 +14,7 @@ function Security() {
     return (
         <div className="home-security">
             <div className="wrapper">
-                <div className="images" data-aos="zoom-out-down">
+                <div className="images" >
                     <img src={secu} alt="securgence" />
                     <img src={lock} alt="lock" />
                 </div>
@@ -40,7 +40,7 @@ function Security() {
 
 const Tag = ({ label, details }) => {
     return (
-        <div className="tag" data-aos="zoom-out-down">
+        <div className="tag" >
             <div className="">
                 <BsShieldFillCheck color='#E8B012' size={50} />
             </div>

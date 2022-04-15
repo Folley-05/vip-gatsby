@@ -3,11 +3,11 @@ import React from 'react'
 import './home.css'
 import Hero from './hero/Hero'
 import About from './about/About'
-import Sectors from './sectors/Sectors'
 import Security from './security/Security'
 import Telecom from './telecom/Telecom'
-import Radio from './radio/Radio'
-import Company from './company/Company'
+// import Radio from './radio/Radio'
+// import Sectors from './sectors/Sectors'
+// import Company from './company/Company'
 // import Testimonials from './Testimonials/Testimonials'
 // import Map from './map/Map'
 
@@ -18,9 +18,9 @@ function Home() {
             <About />
             <Security />
             <Telecom />
-            <Radio />
+            {/* <Radio />
             <Sectors />
-            <Company />
+            <Company /> */}
             {/* <Testimonials /> */}
             {/* <Map /> */}
         </div>

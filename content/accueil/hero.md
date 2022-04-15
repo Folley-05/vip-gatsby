@@ -1,4 +1,5 @@
 ---
+title: hero
 sous-titre: "Lorem ipsum dolor laborum!"
 titre: "Lorem ipsum dolor sit amet, consectetur adipisicing elit et ipsa unde quasi iure."
 button: "Get a quote"

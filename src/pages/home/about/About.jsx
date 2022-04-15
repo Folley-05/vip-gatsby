@@ -25,7 +25,7 @@ function About() {
                             <p>{mdx.frontmatter.secur_text}</p>
                         </div>
                     </div>
-                    <div className="image" data-aos="fade-left" >
+                    <div className="image" >
                         <img src={child} alt="about" />
                     </div>
                 </div>
@@ -36,7 +36,7 @@ function About() {
 
 const query = graphql`
   {
-    mdx(frontmatter: {page: {eq: "home"}}, slug: {eq: "about"}) {
+    mdx(frontmatter: {page: {eq: "home"}}, slug: {eq: "apropos"}) {
       id
       slug
       frontmatter {

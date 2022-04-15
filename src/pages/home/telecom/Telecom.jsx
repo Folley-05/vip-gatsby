@@ -30,7 +30,7 @@ function Telecom() {
                         <Tag label="Telephonie Satellitaire" image={satellite} />
                     </div>
                 </div>
-                <div className="images" data-aos="zoom-out-down">
+                <div className="images" >
                     <img src={telecom2} alt="telecom" />
                     <img src={vip} alt="vip" />
                 </div>
@@ -41,7 +41,7 @@ function Telecom() {
 
 const Tag = ({ label, details, image }) => {
     return (
-        <div className="tag" data-aos="zoom-out-down">
+        <div className="tag" >
             <div className="">
                 <img src={image} alt="cable" />
             </div>

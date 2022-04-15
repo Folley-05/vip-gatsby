@@ -7,11 +7,12 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
-  - name: Pages
-    label: Pages
-    folder: content/home
+  - name: Accueil
+    label: Accueils
+    folder: content/accueil
     create: true
     fields:
+      - { name: title, label: Title }
       # - { name: path, label: Path }
       # - { name: date, label: Date, widget: datetime }
       - { name: titre-section, label: titre-section }
@@ -19,4 +20,16 @@ collections:
       - { name: vip-text, label: vip-text }
       - { name: secur-text, label: secur-text }
       - { name: page, label: page }
+      - { name: body, label: Body, widget: markdown }
+  - name: Securite
+    label: Securite
+    folder: content/securite
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: titre, label: Titre }
+      - { name: Detail, label: texte-court }
+      - { name: Page, label: Page }
+      - { name: Role, label: Role }
+      - { name: Sous-titre, label: Sous-titre }
       - { name: body, label: Body, widget: markdown }

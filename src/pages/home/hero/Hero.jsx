@@ -55,22 +55,22 @@ const Slide1 = ({ data }) => {
         <div className="wrapper">
             <div className="presentation">
                 <div className="text">
-                    <h2 className='text-orange' data-aos="fade-right" data-aos-delay="300">
+                    <h2 className='text-orange' >
                         {data.frontmatter.sous_titre}
                     </h2>
-                    <h1 data-aos="fade-right" >
+                    <h1 >
                         {data.frontmatter.titre}
                     </h1>
-                    <p data-aos="fade-right" data-aos-delay="500" >
+                    <p >
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptas consequatur architecto asperiores deserunt ea eum distinctio officiis in atque.
                     </p>
-                    <button className="bt-st" data-aos="fade-right" data-aos-delay="1000" >
+                    <button className="bt-st" >
                         {data.frontmatter.button}
                     </button>
                 </div>
             </div>
             <div className="images">
-                <img src={women} alt="women" data-aos="fade-up" />
+                <img src={women} alt="women" />
                 {/* <div className="circle"></div> */}
             </div>
         </div>

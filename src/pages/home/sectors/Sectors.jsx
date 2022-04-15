@@ -39,7 +39,7 @@ function Sectors() {
 						</Tag>
 					</div>
 				</div>
-				<div className="images" data-aos="zoom-out-down">
+				<div className="images" >
 					<img src={puz} alt="secteurs" />
 				</div>
 			</div>
@@ -49,7 +49,7 @@ function Sectors() {
 
 const Tag = ({ label, details, children }) => {
 	return (
-		<div className="tag" data-aos="zoom-out-down">
+		<div className="tag" >
 			<div className="">
 				{children}
 			</div>
