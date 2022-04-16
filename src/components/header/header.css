@@ -100,7 +100,7 @@
 @media screen and (min-width: 992px) {
 
     .header {
-        width: calc(100% - 19px);
+        width: calc(100% - 16px);
     }
 
     .header .hamburger {
@@ -181,7 +181,6 @@
 
     .header img {
         display: block;
-        /* width: 150px; */
         margin: 0px 20px;
     }
 
@@ -202,7 +201,6 @@
     .header .navbar li {
         margin-right: 3%;
         font-size: 1.3em;
-        /* font-weight: bold; */
     }
 
 }
