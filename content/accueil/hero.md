@@ -1,7 +1,7 @@
 ---
 title: hero
 titre-section: bof
-titre: La solution associant lest telecommunications et la securite.
+titre: La solution associant les télécommunications et la sécurité au Canada.
 vip-text: bof
 secur-text: bof
 page: home
