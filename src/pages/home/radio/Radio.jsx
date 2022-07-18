@@ -9,7 +9,7 @@ function Radio() {
     return (
         <div className="radio">
             <div className="wrapper">
-                <div className="images" data-aos="zoom-out-down">
+                <div className="images">
                     <img src={radio} alt="radiocom" />
                 </div>
                 <div className="contain">
@@ -37,7 +37,7 @@ function Radio() {
 
 const Tag = ({ label, details, children }) => {
     return (
-        <div className="tag" data-aos="zoom-out-down">
+        <div className="tag">
             <div className="">
                 { children }
             </div>

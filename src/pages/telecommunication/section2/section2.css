@@ -1,0 +1,93 @@
+.telecom .section2 {
+    padding: 5%;
+    background-color: var(--bg-blue2);
+}
+.telecom .section2 .wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.telecom .section2 .block {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.telecom .section2 .block .head {
+    height: 10px;
+    background-color: var(--orange);
+}
+.telecom .section2 .block .block-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    background-color: var(--white);
+}
+.telecom .section2 .block .text {
+    width: 70%;
+}
+.telecom .section2 .block .icon {
+    width: 20%;
+}
+.telecom .section2 .block .over {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--blue);
+    border-radius: 50%;
+}
+.telecom .section2 .block img {
+    display: block;
+    width: 67px;
+    height: 67px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .telecom .section2 .blocks {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+    }
+    .telecom .section2 .block {
+        width: 48%;
+    }
+    .telecom .section2 .block .icon {
+        width: 25%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .telecom .section2 p {
+        width: 80%;
+    }
+    .telecom .section2 .blocks {
+        padding: 2%;
+    }
+    .telecom .section2 .block {
+        width: 45%;
+    }
+    .telecom .section2 .block .text {
+        width: 75%;
+    }
+    .telecom .section2 .block .icon {
+        width: 25%;
+    }
+
+}
+
+
+
+.section2 .blocks .block:nth-child(2) .head, .section2 .blocks .block:nth-child(3) .head {
+    background-color: var(--blue);
+}
+.section2 .blocks .block:nth-child(2) .over, .section2 .blocks .block:nth-child(3) .over {
+    background-color: var(--orange);
+}

@@ -1,0 +1,48 @@
+.telecom .section3 {
+    background-image: url('./pylons.jpg');
+    background-position: center;
+    color: var(--white);
+}
+.telecom .section3 .wrapper {
+    width: 90%;
+    margin: auto;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.telecom .section3 .wrapper div {
+    width: 90%;
+}
+.telecom .section3 .wrapper button {
+    margin-top: 10px;
+    padding: 3%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all .5s ease-out;
+}
+
+@media screen and (min-width: 992px) {
+    .telecom .section3 .wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .telecom .section3 .wrapper div {
+        width: 50%;
+    }
+    .telecom .section3 h2 {
+        font-size: 2.5em;
+    }
+    .telecom .section3 .wrapper button {
+        padding: 2%;
+    }
+    .telecom .section3 .wrapper button:hover {
+        cursor: pointer;
+        background-color: var(--orange);
+        border: 2px solid var(--orange);
+    }
+    
+}

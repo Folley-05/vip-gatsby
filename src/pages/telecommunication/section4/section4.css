@@ -1,0 +1,75 @@
+.telecom .section4 {
+    padding: 5%;
+}
+.telecom .section4 .wrapper {
+    width: 90%;
+    margin: auto;
+}
+.telecom .section4 .wrapper>p {
+    margin-bottom: 20px;
+}
+.telecom .section4 .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.383);
+}
+.telecom .section4 .block .icon {
+    width: 30%;
+}
+.telecom .section4 .block .text {
+    width: 68%;
+}
+.telecom .section4 img {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (min-width: 864px) {
+    .telecom .section4 .blocks {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .telecom .section4 .block {
+        width: 40%;
+        max-width: none;
+        margin: 15px 0px;
+        padding: 1%;
+    }
+    .telecom .section4 .block h3 {
+        width: 80%;
+    }
+    .telecom .section4 .block .icon {
+        width: 20%;
+    }
+    .telecom .section4 .block .text {
+        width: 75%;
+    }
+    .telecom .section4 img {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .telecom .section4 .blocks {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    .telecom .section4 .block {
+        width: 22%;
+        max-width: none;
+        margin: 15px 0px;
+        padding: 1%;
+    }
+    .telecom .section4 .block .icon {
+        width: 35%;
+    }
+}

@@ -1,0 +1,101 @@
+.telecom-hero {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.telecom-hero .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 60vh;
+    margin: auto;
+}
+.telecom-hero .contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.telecom-hero h1 {
+    font-size: 1.5em;
+    margin: 5px auto;
+    text-align: center;
+}
+.telecom-hero h3 {
+    font-size: 1em;
+    margin: 5px auto;
+    text-align: center;
+}
+.telecom-hero .line {
+    width: 50%;
+    margin: 20px auto;
+    border-bottom: 8px solid var(--orange);
+    border-radius: 10px;
+}
+.telecom-hero .img {
+    order: -1;
+    margin-bottom: 20px;
+}
+
+
+.telecom-hero img {
+    display: block;
+    width: 70%;
+    margin: auto;
+    max-width: 500px;
+    animation: hero-bounce 30s linear 0s infinite normal forwards;
+}
+
+@media screen and (min-width: 992px) {
+    .telecom-hero .wrapper {
+        padding: 2%;
+        /* border: 1px solid red;  */
+    }
+    .telecom-hero .contain {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        max-width: 1400px;
+    }
+    .telecom-hero .text {
+        display: flex;
+        align-items: center;
+        padding: 4% 3%;
+        /* border: 1px solid #000; */
+    }
+    .telecom-hero .line {
+        /* width: 20px; */
+        height: 120px;
+        margin: auto 20px;
+        order: -1;
+        border-left: 8px solid var(--orange);
+        border-radius: 10px;
+    }
+    .telecom-hero h1 {
+        margin: 5px auto;
+        font-size: 2.8em;
+        font-weight: 800;
+        text-align: left;
+    }
+    .telecom-hero h3 {
+        /* margin: 0px auto; */
+        text-align: left;
+    }
+    .telecom-hero .img {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .telecom-hero img {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        /* border: 1px solid #000; */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,55 @@
+.telecom .section1 {
+    padding: 5%;
+    /* border: 1px solid blue; */
+}
+.telecom .section1 .wrapper {
+    width: 90%;
+    margin: auto;
+}
+.telecom .section1 .text {
+    margin-bottom: 25px;
+}
+.telecom .section1 .text button {
+    padding: 2%;
+    font-size: 1.3em;
+}
+.telecom .section1 li {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.telecom .section1 .descript {
+    /* width: 80%;
+    margin: auto; */
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .telecom .section1 h2 {
+        margin: 30px auto;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .telecom .section1 .text {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto;
+        font-size: 1.2em;
+    }
+    .telecom .section1 .text>div {
+        width: 48%;
+    }
+    .telecom .section1 .text div:nth-child(1) {
+        order: 1;
+    }
+    
+}
+
+
+
+
+
+
+
+

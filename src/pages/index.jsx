@@ -4,8 +4,8 @@ import { graphql } from 'gatsby'
 import AppRoot from '../components/approot/AppRoot'
 import Home from './home/Home'
 
-function Index({location, data}) {
-    // console.log("the data ", data, location)
+function Index({ location, data }) {
+	// console.log("the data ", data, location)
 	return (
 		<AppRoot location={location}>
 			<Home />
