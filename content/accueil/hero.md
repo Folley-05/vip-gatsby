@@ -1,7 +1,7 @@
 ---
 title: hero
 titre-section: bof
-titre: Services de télécommunications et de sécurité
+titre: Services de télécommunications et de sécurité version 3
 vip-text: bof
 secur-text: bof
 page: home
