@@ -2,6 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { EffectCube, Pagination, Autoplay } from "swiper"
 import { useStaticQuery, graphql } from 'gatsby'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 // Import Swiper styles
 import "swiper/css"
@@ -14,7 +15,8 @@ import vip from '../../../assets/vip.png'
 import secu from '../../../assets/secu.png'
 
 function Hero() {
-    const { mdx } = useStaticQuery(query)
+    // const { mdx } = useStaticQuery(query)
+    const { allMdx } = useStaticQuery(query2)
     // console.log("the root data ", mdx)
     return (
         <div className='hero'>
@@ -35,13 +37,13 @@ function Hero() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <Slide1 data={mdx} />
+                    <Slide1 data={allMdx.edges[0].node} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Slide2 />
+                    <Slide2 data={allMdx.edges[1].node} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Slide3 />
+                    <Slide3 data={allMdx.edges[2].node} />
                 </SwiperSlide>
             </Swiper>
         </div>
@@ -58,12 +60,15 @@ const Slide1 = ({ data }) => {
                     <h2 className='text-orange' >
                         {data.frontmatter.sous_titre}
                     </h2>
-                    <h1 >
+                    <h1>
                         {data.frontmatter.titre}
                     </h1>
-                    <p >
+                    <MDXRenderer>
+                        {data.body}
+                    </MDXRenderer>
+                    {/* <p >
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptas consequatur architecto asperiores deserunt ea eum distinctio officiis in atque.
-                    </p>
+                    </p> */}
                     <button className="bt-st" >
                         {data.frontmatter.button}
                     </button>
@@ -77,7 +82,7 @@ const Slide1 = ({ data }) => {
     )
 }
 
-const Slide2 = () => {
+const Slide2 = ({ data }) => {
     return (
 
         <div className="wrapper">
@@ -86,23 +91,25 @@ const Slide2 = () => {
             </div>
             <div className="presentation">
                 <div className="text">
-                    <h1>La solution de Telecommunication adaptee a vos besoins.</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptas consequatur architecto asperiores deserunt ea eum distinctio officiis in atque.</p>
-                    <button className="bt-st">Get a quote</button>
+                    <h1>{data.frontmatter.titre}</h1>
+                    <MDXRenderer>{data.body}</MDXRenderer>
+                    {/* <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptas consequatur architecto asperiores deserunt ea eum distinctio officiis in atque.</p> */}
+                    <button className="bt-st">{data.frontmatter.button}</button>
                 </div>
             </div>
         </div>
     )
 }
-const Slide3 = () => {
+const Slide3 = ({data}) => {
     return (
 
         <div className="wrapper">
             <div className="presentation">
                 <div className="text">
-                    <h1>Pratiquer votre activite en toute Securite.</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptas consequatur architecto asperiores deserunt ea eum distinctio officiis in atque.</p>
-                    <button className="bt-st">Get a quote</button>
+                    <h1>{data.frontmatter.titre}</h1>
+                    <MDXRenderer>{data.body}</MDXRenderer>
+                    {/* <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus voluptas consequatur architecto asperiores deserunt ea eum distinctio officiis in atque.</p> */}
+                    <button className="bt-st">{data.frontmatter.button}</button>
                 </div>
             </div>
             <div className="images">
@@ -112,20 +119,42 @@ const Slide3 = () => {
     )
 }
 
-const query = graphql`
-  {
-    mdx(frontmatter: {page: {eq: "home"}}, slug: {eq: "hero"}) {
-      id
-      slug
-      frontmatter {
-        page
-        titre
-        sous_titre
-        button
+// const query = graphql`
+//   {
+//     mdx(frontmatter: {page: {eq: "home"}}, slug: {eq: "hero"}) {
+//       id
+//       slug
+//       frontmatter {
+//         page
+//         titre
+//         sous_titre
+//         button
+//       }
+//       body
+//     }
+//   }
+// `
+
+export const query2 = graphql`
+{
+  allMdx(
+    filter: {frontmatter: {title: {eq: "hero-slides"}}}
+    sort: {fields: slug, order: ASC}
+  ) {
+    edges {
+      node {
+        id
+        frontmatter {
+          button
+          title
+          titre
+          sous_titre
+        }
+        body
       }
-      body
     }
   }
+}
 `
 
 export default Hero

@@ -1,9 +1,6 @@
 ---
-title: hero
-titre-section: bof
-titre: Services de télécommunications et de sécurité
-vip-text: bof
-secur-text: bof
+title: hero-slides
+titre: La solution de Telecommunication et de securite adaptee a vos besoins.
 page: home
 button: Get a quote
 sous-titre: Lorem ipsum dolor laborum!

@@ -1,7 +1,7 @@
 ---
-title: hero
-titre-section: bof
-titre: Services de télécommunications et de sécurité
+title: hero-slides
+titre-section: hero
+titre: Des Telecommunications adaptee a vos besoins.
 vip-text: bof
 secur-text: bof
 page: home
