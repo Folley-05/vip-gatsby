@@ -4,11 +4,9 @@ import { Link } from 'gatsby'
 import './header.css'
 import './header2.css'
 import enseigne from './enseigne.png'
-
+ 
 
 function Header({location}) {
-    // let history=useHistory()
-    let history = {}
     useEffect(() => {
         let approot = document.querySelector('#approot')
         // console.log(approot)
@@ -36,7 +34,7 @@ function Header({location}) {
     return (
         <div className={company ? 'header-company' : 'header'} id='header'>
             <div className="wrapper" id='wrapper'>
-                <div className="banners" onClick={() => history.push('/')}>
+                <div className="banners">
                     <img src={enseigne} alt="securgence-vip" />
                     <div className="comp-banner">
                         <h1>SECURGENCE | VIP TELECOM</h1>
