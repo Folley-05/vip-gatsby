@@ -2,3 +2,26 @@ dasboard netlify :
     https://master--polite-rolypoly-11fe90.netlify.app/admin/#/collections/Securite
     login: djounda@ipercash.fr
     password: password
+
+
+    useEffect(() => {
+        let approot = document.querySelector('#approot')
+        // console.log(approot)
+        approot.addEventListener('scroll', () => {
+            // console.log(approot.scrollHeight, approot.scrollTop)
+            if (approot.scrollTop >= 20) {
+                document.querySelector('#header').classList.add('bg-white')
+            } else document.querySelector('#header').classList.remove('bg-white')
+            if (approot.scrollTop / approot.scrollHeight >= 1 / 2) {
+                // console.log("scroll level hit", approot.scrollTop, approot.scrollHeight)
+                document.querySelector('#totop').classList.remove("hide")
+            } else {
+                document.querySelector('#totop').classList.add("hide")
+            }
+        }, false)
+    }, [])
+
+    const toggleMenu = () => {
+        console.log("toogle menu ", document.getElementById('wrapper'))
+        document.getElementById('wrapper').classList.toggle('open')
+    }

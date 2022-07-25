@@ -4,9 +4,9 @@ import { Link } from 'gatsby'
 import './header.css'
 import './header2.css'
 import enseigne from './enseigne.png'
- 
 
-function Header({location}) {
+
+function Header({ location }) {
     useEffect(() => {
         let approot = document.querySelector('#approot')
         // console.log(approot)

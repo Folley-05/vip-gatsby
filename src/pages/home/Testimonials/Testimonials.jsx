@@ -6,7 +6,10 @@ import Image1 from './testimonial-1.jpg'
 import Image2 from './testimonial-5.jpg'
 // import Image from './testimonial-1.jpg'
 
-import List from './testimonialsList'
+// import TestiList from './testimonialsList'
+
+// var List=JSON.parse(TestiList)
+
 class Testimonials extends Component {
     state={
         id: 0
@@ -53,3 +56,47 @@ class TestimonialOne extends Component {
 }
 
 export default Testimonials
+
+const List=[
+    {
+        id: 0,
+        image: "",
+        text: "Aklima The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original."
+    },
+    {
+        id: 1,
+        image: "",
+        text: "Fatima Asrafy standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original."
+    },
+    {
+        id: 2,
+        image: "",
+        text: "Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original."
+    },
+    {
+        id: 3,
+        image: "",
+        text: "Standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original."
+    },
+    {
+        id: 4,
+        image: "",
+        text: "John Doe The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original."
+    },
+    {
+        id: 5,
+        image: "",
+        text: "Chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original."
+    },
+    {
+        id: 6,
+        image: "",
+        text: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original."
+    },
+    {
+        id: 7,
+        image: "",
+        text: "Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original."
+    }
+]
+
