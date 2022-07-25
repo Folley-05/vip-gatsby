@@ -1,0 +1,81 @@
+.radiocom .section2 {
+    padding: 5%;
+    background-color: var(--bg-blue2);
+}
+.radiocom .section2 .wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.radiocom .section2 .block {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.radiocom .section2 .block .head {
+    height: 10px;
+    background-color: var(--orange);
+}
+.radiocom .section2 .block .block-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    background-color: var(--white);
+}
+.radiocom .section2 .block .text {
+    width: 70%;
+}
+.radiocom .section2 .block .icon {
+    width: 20%;
+}
+.radiocom .section2 .block .over {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--blue);
+    border-radius: 50%;
+}
+.radiocom .section2 img {
+    max-width: 75px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .radiocom .section2 .blocks {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1%;
+    }
+    .radiocom .section2 .block {
+        width: 48%;
+    }
+    .radiocom .section2 .block .icon {
+        width: 25%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .radiocom .section2 p {
+        width: 80%;
+    }
+    .radiocom .section2 .blocks {
+        padding: 2%;
+    }
+    .radiocom .section2 .block {
+        width: 45%;
+    }
+    .radiocom .section2 .block .text {
+        width: 75%;
+    }
+    .radiocom .section2 .block .icon {
+        width: 25%;
+    }
+
+}

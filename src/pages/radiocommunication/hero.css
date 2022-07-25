@@ -1,0 +1,102 @@
+.radiocom-hero {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.radiocom-hero .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 60vh;
+    margin: auto;
+}
+.radiocom-hero .contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+
+}
+.radiocom-hero h1 {
+    font-size: 1.5em;
+    margin: 5px auto;
+    text-align: center;
+}
+.radiocom-hero h3 {
+    font-size: 1em;
+    margin: 5px auto;
+    text-align: center;
+}
+.radiocom-hero .line {
+    width: 50%;
+    margin: 20px auto;
+    border-bottom: 8px solid var(--orange);
+    border-radius: 10px;
+}
+.radiocom-hero .img {
+    order: -1;
+    margin-bottom: 20px;
+}
+
+
+.radiocom-hero img {
+    display: block;
+    width: 70%;
+    margin: auto;
+    max-width: 500px;
+    animation: hero-bounce 30s linear 0s infinite normal forwards;
+}
+
+@media screen and (min-width: 992px) {
+    .radiocom-hero .wrapper {
+        padding: 2%;
+        /* border: 1px solid red;  */
+    }
+    .radiocom-hero .contain {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        max-width: 1400px;
+    }
+    .radiocom-hero .text {
+        display: flex;
+        align-items: center;
+        padding: 4% 3%;
+        /* border: 1px solid #000; */
+    }
+    .radiocom-hero .line {
+        /* width: 20px; */
+        height: 120px;
+        margin: auto 20px;
+        order: -1;
+        border-left: 8px solid var(--orange);
+        border-radius: 10px;
+    }
+    .radiocom-hero h1 {
+        margin: 5px auto;
+        font-size: 2.8em;
+        font-weight: 800;
+        text-align: left;
+    }
+    .radiocom-hero h3 {
+        /* margin: 0px auto; */
+        text-align: left;
+    }
+    .radiocom-hero .img {
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .radiocom-hero img {
+        display: block;
+        width: 80%;
+        max-width: 500px;
+        /* border: 1px solid #000; */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+}

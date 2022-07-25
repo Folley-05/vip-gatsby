@@ -1,0 +1,111 @@
+.sectors-section2 {
+    padding: 5% 0%;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.sectors-section2 .wrapper {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.sectors-section2 h1 {
+    display: inline-block;
+    padding: 0% 1%;
+    border-bottom: 3px solid var(--white);
+}
+.sectors-section2 .tl2 {
+    display: none;
+}
+.sectors-section2 .left div {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    padding: 6% 0%;
+    background-color: var(--orange);
+    border-radius: 20px;
+}
+.sectors-section2 img {
+    display: block;
+    width: 110%;
+    border-radius: 20px;
+    transform: translateX(5%);
+}
+.sectors-section2 p {
+    font-size: 1.1em;
+}
+.sectors-section2 button {
+    max-width: 200px;
+    margin: auto;
+    padding: 4% 5%;
+    font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+    .sectors-section2 button {
+        padding: 2% 3%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .sectors-section2 .wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+    .sectors-section2 h1 {
+        font-size: 2.5em;
+    }
+    .sectors-section2 .tl1 {
+        display: none;
+    }
+    .sectors-section2 .tl2 {
+        display: inline-block;
+    }
+    .sectors-section2 .left, .sectors-section2 .rigth {
+        width: 48%;
+        /* border: 1px solid #000; */
+    }
+    .sectors-section2 .rigth{
+        order: -1;
+    }
+    .sectors-section2 .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectors-section2 button {
+        padding: 4%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .sectors-section2 .wrapper {
+        text-align: left;
+    }
+    .sectors-section2 .left {
+        width: 45%;
+    }
+    .sectors-section2 .rigth {
+        width: 45%;
+    }
+    .sectors-section2 .left div {
+        max-width: 800px;
+    }
+    .sectors-section2 p {
+        width: 90%;
+        margin: 30px 0px;
+        font-size: 1.2em;
+    }
+    .sectors-section2 button {
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-width: 1400px) {
+    .sectors-section2 p {
+        margin: 40px 0px;
+        font-size: 1.5em;
+    }
+}

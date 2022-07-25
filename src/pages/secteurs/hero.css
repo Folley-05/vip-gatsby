@@ -1,0 +1,111 @@
+.sector-hero {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.sector-hero .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 60vh;
+    margin: auto;
+}
+.sector-hero .contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.sector-hero h1 {
+    font-size: 1.5em;
+    margin: 5px auto;
+    text-align: center;
+}
+.sector-hero h3 {
+    margin: 5px auto;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+.sector-hero .line {
+    width: 50%;
+    margin: 20px auto;
+    border-bottom: 8px solid var(--orange);
+    border-radius: 10px;
+}
+.sector-hero .img {
+    order: -1;
+    margin-bottom: 20px;
+}
+.sector-hero img {
+    display: block;
+    width: 70%;
+    margin: auto;
+    max-width: 500px;
+    animation: var(--bounce-hero);
+}
+
+@media screen and (min-width: 992px) {
+    .sector-hero .wrapper {
+        padding: 2%;
+    }
+    .sector-hero .contain {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        max-width: 1400px;
+    }
+    .sector-hero .text {
+        display: flex;
+        align-items: center;
+        padding: 4% 1%;
+    }
+    .sector-hero .line {
+        width: 10px;
+        height: 150px;
+        margin: 20px 20px;
+        order: -1;
+        background-color: var(--orange);
+        border: none;
+    }
+    .sector-hero h1 {
+        margin: 5px auto;
+        font-size: 2.5em;
+        font-weight: 800;
+        text-align: left;
+    }
+    .sector-hero h3 {
+        margin-top: 10px;
+        text-align: left;
+    }
+    .sector-hero .img {
+        width: 45%;
+        order: 1;
+        margin-bottom: 20px;
+    }
+    .sector-hero img {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .sector-hero .wrapper {
+        padding: 3% 1%;
+    }
+    .sector-hero .contain {
+        width: 100%;
+        max-width: 1600px;
+    }
+    .sector-hero h1 {
+        font-size: 2.8em;
+    }
+    .sector-hero h3 {
+        font-size: 1.3em;
+    }
+
+}
