@@ -1,0 +1,83 @@
+.company .section4 {
+    padding: 5%;
+}
+.company .section4 .wrapper {
+    width: 90%;
+    margin: auto;
+}
+.company .section4 .wrapper > p {
+    margin: 40px auto;
+    text-align: center;
+}
+.company .section4 .person {
+    display: flex;
+    max-width: 500px;
+    margin: 10px;
+    padding: 2% 1%;
+    box-shadow: 0px 0px 10px 2px #e8af1252;
+    border-radius: 6px;
+}
+.company .section4 .person .img {
+    width: 50%;
+    margin: auto 10px;
+}
+.company .section4 .person img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+.company .section4 .person h4 {
+    margin: 5px auto;
+}
+.company .section4 .person .poste {
+    color: var(--bg-blue2);
+}
+.company .section4 .person .line {
+    display: block;
+    width: 60%;
+    margin: 15px 0;
+    border: 1px solid var(--transparent-black);
+}
+.company .section4 .person .socials {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+.company .section4 .person .ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5px;
+    padding: 3%;
+    background-color: var(--transparent-orange);
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 1200px) {
+    .company .section4 .person img {
+        width: 70%;
+    }
+}
+
+
+/* swiper style */
+.swiper {
+    margin: auto;
+    padding-bottom: 40px;
+}
+.company .section4 .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background: var(--swiper-pagination-bullet-inactive-color,#000);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+    transition: all .1s ease-out;
+}
+.company .section4 .swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--orange);
+    box-shadow: 0px 0px 10px 2px #e8af1252;
+}

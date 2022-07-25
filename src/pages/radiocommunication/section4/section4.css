@@ -1,0 +1,16 @@
+.radiocom .section4 {
+    padding: 5%;
+}
+.radiocom .section4 .wrapper {
+    width: 70%;
+    margin: auto;
+    box-shadow: 30px 20px 10px #e8af123a;
+}
+.radiocom .section4 p {
+    margin: 0;
+    padding: 5% 8%;
+    box-shadow: 0px 1px 9px #00000048;
+    border-radius: 8px;
+    text-align: center;
+}
+

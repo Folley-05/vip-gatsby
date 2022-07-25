@@ -1,0 +1,52 @@
+.sectors-section6 {
+    padding: 5%;
+    background-image: url('./telecom.jpg');
+    background-size: cover;
+}
+.sectors-section6 .wrapper {
+    width: 90%;
+    margin: auto;
+}
+.sectors-section6 .wrapper div {
+    padding: 2% 4%;
+    background-color: var(--transparent-white);
+    border-radius: 10px;
+
+}
+.sectors-section6 p {
+    width: 80%;
+}
+.sectors-section6 li {
+    width: 80%;
+    margin: 15px 20px;
+    font-weight: 600;
+    list-style-type: initial;
+}
+
+@media screen and (min-width: 992px) {
+    .sectors-section6 .wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .sectors-section6 .wrapper div {
+        width: 40%;
+        max-width: 600px;
+        font-size: 1.4em;
+    
+    }
+    .sectors-section6 h2 {
+        font-size: 2em;
+    }
+    .sectors-section6 p {
+        width: 100%;
+    }
+    .sectors-section6 li {
+        width: 100%;
+        margin: 25px 20px;
+        font-weight: 600;
+        list-style-type: initial;
+    }
+    
+}
+
+

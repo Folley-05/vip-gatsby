@@ -1,0 +1,39 @@
+.company .section2 {
+    padding: 5%;
+    background-color: var(--transparent-orange);
+}
+.company .section2 .wrapper {
+    width: 90%;
+    margin: auto;
+}
+.company .section2 h3 {
+    margin-top: 40px;
+    text-align: center;
+}
+.company .section2 .pillars {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.company .section2 .pillar {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.company .section2 .pillar b {
+    margin-top: 10px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .company .section2 .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .company .section2 .content > div {
+        width: 45%;
+    }
+    
+}
